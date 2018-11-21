@@ -23,6 +23,8 @@ class Scalingseg
       void number7();
       void number8();
       void number9();
+      void showNumPlus();
+      void showNumMinus();
 
   private:
     int led1;
@@ -33,3 +35,24 @@ class Scalingseg
 
 #endif
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+ 

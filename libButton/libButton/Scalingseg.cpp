@@ -1,8 +1,3 @@
-/* 
- *  Scalingseg.cpp - Libray to scale your 7-segment
- *  in numbers of 0-9, works well within a button function.
- */
-
 #include "Arduino.h"
 #include "Scalingseg.h"
 
@@ -109,4 +104,99 @@ void Scalingseg::number9(){
 
 
 }
+
+int numberplus=0;
+
+void Scalingseg::showNumPlus(){
+
+
+
+      if (numberplus<10){
+    numberplus++;
+
+    if (numberplus==0){
+      number0();
+    }
+    if (numberplus==1){
+      number1();
+    }
+    if (numberplus==2){
+      number2();
+    }
+    if (numberplus==3){
+      number3();
+    }
+    if (numberplus==4){
+      number4();
+    }
+    if (numberplus==5){
+      number5();
+    }
+    if (numberplus==6){
+      number6();
+    }
+    if (numberplus==7){
+      number7();
+    }
+    if (numberplus==8){
+      number8();
+    }
+    if (numberplus==9){
+      number9();
+    }
+  }
+
+  if (numberplus>9){
+  numberplus=9;
+  }
+}
+
+void Scalingseg::showNumMinus(){
+  
+
+  
+  if (numberplus<10){
+
+    numberplus--;
+
+    if (numberplus==0){
+      number0();
+    }
+    if (numberplus==1){
+      number1();
+    }
+    if (numberplus==2){
+      number2();
+    }
+    if (numberplus==3){
+      number3();
+    }
+    if (numberplus==4){
+      number4();
+    }
+    if (numberplus==5){
+      number5();
+    }
+    if (numberplus==6){
+      number6();
+    }
+    if (numberplus==7){
+      number7();
+    }
+    if (numberplus==8){
+      number8();
+    }
+    if (numberplus==9){
+      number9();
+    }
+  }
+ 
+  if (numberplus<0){
+    numberplus=0;
+  
+  }
+}
+  
+
+
 

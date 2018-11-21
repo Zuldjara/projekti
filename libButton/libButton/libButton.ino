@@ -23,12 +23,20 @@ digitalWrite(vcc1, HIGH);
 
 
 
-int numberplus=0;
+
 
 
   void loop(){
 
-led1.number9();
+if(S1.pressed()){
+  Serial.println("Pressed");
+  led1.showNumPlus();
+}
+
+if(S2.pressed()){
+  Serial.println("Pressed");
+  led1.showNumMinus();
+}
 
     
   }
